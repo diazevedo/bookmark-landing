@@ -448,8 +448,43 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --primary-color: hsl(231, 69%, 60%);
+  --secondary-color: hsl(0, 94%, 66%);
+  --third-color: hsl(229, 8%, 60%);
+  --fourth-color: hsl(229, 31%, 21%);
+  --max-width: 1440px;
+  --mobile-width: 375px;
+  --tablet-width: 768px;
+  --desktop-width: 1440px;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
 body {
-  margin: 10rem 8rem;
-  border: 10px solid #000;
+  font-size: 1.8rem;
+  font-family: "Rubik", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+body,
+body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+input {
+  border: none;
 }
 /*# sourceMappingURL=styles.css.map */
