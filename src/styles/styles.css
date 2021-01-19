@@ -458,20 +458,10 @@ button {
   padding: 0;
 }
 
-:root {
-  --primary-color: hsl(231, 69%, 60%);
-  --secondary-color: hsl(0, 94%, 66%);
-  --third-color: hsl(229, 8%, 60%);
-  --fourth-color: hsl(229, 31%, 21%);
-  --max-width: 1440px;
-  --mobile-width: 375px;
-  --tablet-width: 768px;
-  --desktop-width: 1440px;
-}
-
 html {
   font-size: 62.5%;
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -479,7 +469,7 @@ body {
   font-family: "Rubik", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: var(--max-width);
+  max-width: var(1440px);
   margin: 0 auto;
 }
 
@@ -492,5 +482,144 @@ body * {
 a {
   color: inherit;
   cursor: pointer;
+}
+
+.header {
+  border: 1px solid #000;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem 3rem;
+}
+
+.header .header-logo {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  z-index: 40;
+}
+
+.header .header-menu-btn {
+  display: none;
+}
+
+.header .header-menu-icon {
+  cursor: pointer;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  z-index: 3;
+  text-indent: -9999px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .header-menu-icon .menu-nav-icon {
+  display: block;
+  width: 18px;
+  height: 3px;
+  position: relative;
+  background: #252b46;
+}
+
+.header .header-menu-icon .menu-nav-icon:before, .header .header-menu-icon .menu-nav-icon:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  position: absolute;
+  background: #252b46;
+  top: 0.6rem;
+}
+
+.header .header-menu-icon .menu-nav-icon:after {
+  top: -0.6rem;
+}
+
+.header .header-menu-btn:checked ~ .header-logo .logo-image {
+  -webkit-filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(1000%) contrast(1000%);
+          filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(1000%) contrast(1000%);
+  position: fixed;
+  top: 4rem;
+}
+
+.header .header-menu-btn:checked ~ .header-menu-icon .menu-nav-icon {
+  background: transparent;
+  position: fixed;
+  top: 5rem;
+  right: 3rem;
+}
+
+.header .header-menu-btn:checked ~ .header-menu-icon .menu-nav-icon:before {
+  background-color: #fff;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  top: 0;
+}
+
+.header .header-menu-btn:checked ~ .header-menu-icon .menu-nav-icon:after {
+  background-color: #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 0;
+}
+
+.header .header-menu-list-item .header-menu-list-item-item:hover,
+.header .header-menu-btn:hover {
+  background-color: #5368df;
+}
+
+.header .header-menu-btn:checked ~ .header-menu {
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  left: 0;
+  right: 0;
+  position: fixed;
+}
+
+.header .header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #252b46;
+  height: 100vh;
+  padding: 1rem;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: -200%;
+}
+
+.header .header-menu-list,
+.header .header-social-list {
+  margin-top: 40px;
 }
 /*# sourceMappingURL=styles.css.map */

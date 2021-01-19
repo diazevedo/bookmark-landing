@@ -24,34 +24,45 @@
   </head>
 
   <body>
-    <header>
-      <a href="" class="button-link"><img src="" /></a>
-      <label
-        >Open Menu
-        <input type="checkbox" name="menu-controller" id="menu-controller" />
-      </label>
-      <ul>
-        <li>
-          <a href="#">Features</a>
-        </li>
-        <li>
-          <a href="#">Pricing</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-        <li>
-          <a href="#">Login</a>
-        </li>
-      </ul>
+    <header class="header">
+      <input
+        class="header-menu-btn"
+        type="checkbox"
+        name="menu-btn"
+        id="menu-btn"
+      />
 
-      <ul class="">
-        <li>
-          <a href="" class="">Facebook</a>
-        </li>
-        <li><a href="" class="">Twitter</a></li>
-        <li><a href="" class="">Linkedin</a></li>
-      </ul>
+      <label class="header-menu-icon" for="menu-btn"
+        >Open Menu<span class="menu-nav-icon"></span
+      ></label>
+
+      <a href="#" class="header-logo"
+        ><img src="./src/assets/images/logo-bookmark.svg" class="logo-image"
+      /></a>
+      <div class="header-menu">
+        <ul class="header-menu-list">
+          <li class="header-menu-list-item">
+            <a class="#" href="#">Features</a>
+          </li>
+          <li class="header-menu-list-item">
+            <a class="header-menu-list-item-link" href="#">Pricing</a>
+          </li>
+          <li class="header-menu-list-item">
+            <a class="header-menu-list-item-link" href="#">Contact</a>
+          </li>
+          <li class="header-menu-list-item">
+            <a class="header-menu-list-item-link" href="#">Login</a>
+          </li>
+        </ul>
+
+        <ul class="header-social-list">
+          <li>
+            <a href="" class="">Facebook</a>
+          </li>
+          <li><a href="" class="">Twitter</a></li>
+          <li><a href="" class="">Linkedin</a></li>
+        </ul>
+      </div>
     </header>
     <main>
       <section class="intro">
@@ -66,10 +77,10 @@
           <a href="" class="link-button">Get it on Firefox</a>
         </div>
         <div>
-          <img
+          <!-- <img
             src="./src/assets/images/illustration-hero.svg"
             alt="Introduction image"
-          />
+          /> -->
         </div>
       </section>
       <section class="features"></section>
