@@ -1,8 +1,11 @@
-@import "_reset";
+@import "./abstracts/_screens";
+@import './abstracts/_mixins';
+@import './abstracts/_colors';
 
-@import "_screens";
-@import '_mixins';
-@import '_colors';
-@import "_base";
+@import "./base/_reset";
+@import "./base/_base";
 
-@import "_header"
+@import './components/lists';
+@import './components/menu-icon';
+
+@import "./layout/_header"

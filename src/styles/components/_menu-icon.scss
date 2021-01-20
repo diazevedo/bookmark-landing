@@ -1,0 +1,69 @@
+/** checkbox to determine if menu will be opened */
+.menu-btn {
+  position: absolute;
+  left: -9999px;
+
+  &:checked ~ .menu-icon {
+    & .menu-nav-icon {
+      background: transparent;
+      position: fixed;
+
+      right: 3rem;
+    }
+
+    & .menu-nav-icon:before {
+      background-color: #fff;
+      transform: rotate(-45deg);
+      top: 0;
+    }
+
+    & .menu-nav-icon:after {
+      background-color: #fff;
+      transform: rotate(45deg);
+      top: 0;
+    }
+  }
+
+  @include md {
+    display: none;
+
+    & ~ .menu-icon {
+      display: none;
+    }
+  }
+}
+
+/** the burger icon */
+.menu-icon {
+  cursor: pointer;
+
+  text-indent: -9999px;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  display: flex;
+  align-items: center;
+
+  .menu-nav-icon {
+    display: block;
+    width: 18px;
+    height: 3px;
+    position: relative;
+    background: $fourth-color;
+
+    &:before,
+    &:after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      transition: all 0.2s ease-out;
+      position: absolute;
+      background: $fourth-color;
+      top: 0.6rem;
+    }
+
+    &:after {
+      top: -0.6rem;
+    }
+  }
+}
