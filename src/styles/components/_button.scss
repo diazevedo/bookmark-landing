@@ -1,0 +1,50 @@
+.link-button {
+  display: block;
+  border: 2px solid #fff;
+  border-radius: 7px;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.link:hover {
+  color: $secondary-color;
+}
+
+.link-icon {
+  background-repeat: no-repeat;
+  text-indent: -999px;
+  display: block;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.face {
+  background-image: url("../assets/images/icon-facebook.svg");
+}
+
+.twitter {
+  background-image: url("../assets/images/icon-twitter.svg");
+}
+
+.linkedin {
+  background-image: url("../assets/images/linkedin-in-brands.svg");
+}
+
+.login {
+  &:hover {
+    background-color: #fff;
+    color: $secondary-color;
+  }
+
+  @include md {
+    width: 11rem;
+    padding: 1.4rem 0;
+
+    border: 2px solid $secondary-color;
+    background-color: $secondary-color;
+    color: #fff;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.6);
+  }
+}
