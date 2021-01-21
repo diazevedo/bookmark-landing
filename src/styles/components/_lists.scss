@@ -5,6 +5,10 @@
     justify-content: space-between;
   }
 
+  @include lg {
+    justify-content: flex-end;
+  }
+
   & .menu-list-item {
     border-top: rgba(255, 255, 255, 0.3) solid 0.5px;
     color: #fff;
@@ -20,6 +24,12 @@
       color: $fourth-color;
 
       font-size: 1.2rem;
+    }
+
+    @include lg {
+      &:not(:last-child) {
+        margin-right: 4.5rem;
+      }
     }
   }
 }

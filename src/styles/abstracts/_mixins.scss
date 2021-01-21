@@ -21,3 +21,47 @@
     @content;
   }
 }
+
+@mixin shadow($color: rgba(0, 0, 0, 0.6)) {
+  box-shadow: 0 4px 15px 0 $color;
+}
+
+@mixin row($justify-content: space-between, $align: center, $width: auto) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align;
+
+  width: $width;
+}
+
+/** buttons*/
+
+@mixin link-button(
+  $background-color: $primary-color,
+  $border-color: #fff,
+  $text-color: $primary-color,
+  $shadow-color: rgba(0, 0, 0, 0.6)
+) {
+  min-width: 11rem;
+  background-color: $background-color;
+  display: block;
+  border: 2px solid $border-color;
+  border-radius: 6px;
+  padding: 1.2rem 2rem;
+  text-align: center;
+  color: $text-color;
+  transition: all 0.25s ease-in-out;
+}
+
+@mixin link-button-hover(
+  $background-color: transparent,
+  $text-color: $primary-color,
+  $border-color: $primary-color
+) {
+  &:hover {
+    background-color: $background-color;
+    color: $text-color;
+    box-shadow: none;
+    border: 2px solid $border-color;
+  }
+}

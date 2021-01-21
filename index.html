@@ -47,7 +47,7 @@
             <a class="link" href="#">Contact</a>
           </li>
           <li class="menu-list-item">
-            <a class="link-button login" href="#">Login</a>
+            <a class="login-button" href="#">Login</a>
           </li>
         </ul>
 
@@ -64,24 +64,33 @@
         </ul>
       </div>
     </header>
-    <main>
+    <main class="container">
       <section class="intro">
-        <div>
-          <h1>A Simple Bookmark Manager</h1>
-          <p>
-            A clean and simple interface to organize your favourite websites.
-            Open a new browser tab and see your sites load instantly. Try it for
-            free.
-          </p>
-          <a href="" class="link-button">Get it on Chrome</a>
-          <a href="" class="link-button">Get it on Firefox</a>
-        </div>
-        <div>
-          <img
-            src="./src/assets/images/illustration-hero.svg"
-            alt="Introduction image"
-            width="100%"
-          />
+        <div class="content-wrapper">
+          <div class="product-description">
+            <h1 class="title-first">A Simple Bookmark Manager</h1>
+            <p class="paragraph-description">
+              A clean and simple interface to organize your favourite websites.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div class="row">
+              <a href="#" class="link-button action-link">Get it on Chrome</a>
+              <a href="#" class="link-button action-link -inactive"
+                >Get it on Firefox</a
+              >
+            </div>
+          </div>
+          <div class="intro-image-container">
+            <div class="intro-image-pseudo">
+              <img
+                class="intro-image"
+                src="./src/assets/images/illustration-hero.svg"
+                alt="Introduction image"
+                width="100%"
+              />
+            </div>
+          </div>
         </div>
       </section>
       <section class="features"></section>

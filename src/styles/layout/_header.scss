@@ -1,14 +1,19 @@
 .header {
   width: 100%;
-  max-width: 118.2rem;
+  max-width: 120rem;
   height: 10rem;
   margin: 0 auto;
 
   display: flex;
   justify-content: space-between;
-
   align-items: center;
-  padding: 0 3rem;
+
+  padding: 0 4rem;
+
+  @include lg {
+    padding-top: 2.5rem;
+    height: auto;
+  }
 
   & .menu-icon {
     order: 2;
@@ -47,6 +52,7 @@
     background-color: rgba(19, 30, 78, 0.9);
 
     position: fixed;
+    z-index: 1;
   }
 
   .header-menu {
@@ -60,7 +66,7 @@
     padding: 3rem;
     overflow: hidden;
     position: fixed;
-
+    z-index: initial;
     transform: scale(0);
     top: 0;
     left: 0;
@@ -78,6 +84,9 @@
 
     @include lg {
       flex: 1;
+      padding: 0;
+
+      // max-width: 67rem;
     }
   }
 
