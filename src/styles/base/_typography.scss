@@ -19,4 +19,13 @@
   @include md {
     font-size: 1.6rem;
   }
+
+  @include lg {
+    color: $third-color;
+    color: #8c8d95;
+    line-height: 3rem;
+
+    font-size: 1.8rem;
+    opacity: 0.8;
+  }
 }
