@@ -963,7 +963,12 @@ a {
 
 .intro {
   width: 100%;
-  margin-top: 10rem;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    margin-top: 10rem;
+  }
 }
 
 .content-wrapper {
@@ -984,6 +989,13 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
     text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .content-wrapper {
+    height: 48rem;
+    width: 100%;
   }
 }
 
@@ -1058,37 +1070,42 @@ a {
   padding: 2.5rem 1.3rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .content-wrapper .intro-image-container {
     padding: 0 1.3rem;
     margin-bottom: 0;
     height: 100%;
     width: 50%;
     max-width: 58rem;
+    overflow: initial;
   }
 }
 
 .content-wrapper .intro-image-container .intro-image-pseudo {
   margin: 0 auto;
+  position: relative;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .content-wrapper .intro-image-container .intro-image-pseudo {
     width: 100%;
     height: 100%;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1260px) {
   .content-wrapper .intro-image-container .intro-image {
-    height: 70%;
+    height: 47rem;
+    max-width: 65.5rem;
+    -webkit-transform: translateX(5.5rem) translateY(-20px);
+            transform: translateX(5.5rem) translateY(-20px);
   }
 }
 
 .content-wrapper .intro-image-container .intro-image-pseudo:before {
   content: "";
   width: 100%;
-  height: 100%;
+  height: 80%;
   -webkit-transform: translateX(18%) translateY(29%);
           transform: translateX(18%) translateY(29%);
   display: block;
@@ -1097,5 +1114,21 @@ a {
   z-index: -2;
   border-top-left-radius: 500px;
   border-bottom-left-radius: 500px;
+}
+
+@media (min-width: 992px) {
+  .content-wrapper .intro-image-container .intro-image-pseudo:before {
+    height: 60%;
+    -webkit-transform: translateX(25%) translateY(40%);
+            transform: translateX(25%) translateY(40%);
+  }
+}
+
+@media (min-width: 1260px) {
+  .content-wrapper .intro-image-container .intro-image-pseudo:before {
+    height: 35rem;
+    -webkit-transform: translateX(45%) translateY(35%);
+            transform: translateX(45%) translateY(35%);
+  }
 }
 /*# sourceMappingURL=styles.css.map */
