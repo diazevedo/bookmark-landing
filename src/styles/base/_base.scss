@@ -11,6 +11,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   max-width: var($screen-xl-max);
   margin: 0 auto;
+
+  overflow-x: hidden;
 }
 
 body,
@@ -25,7 +27,5 @@ a {
 
 .container {
   max-width: 144rem;
-  border: saddlebrown 2px solid;
-
   margin: 0 auto;
 }

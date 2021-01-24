@@ -1,6 +1,10 @@
 .intro {
   width: 100%;
 
+  max-width: 120rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+
   @include md {
     margin-top: 10rem;
   }
@@ -24,16 +28,25 @@
   .product-description {
     border: turquoise 1px solid;
     padding: 2.5rem 3.5rem 4.5rem;
+
     @include md {
-      padding: 7rem;
-      flex: 1;
+      flex: 2;
     }
 
     @include lg {
       padding-right: 0;
-      padding-left: 0;
-      margin-left: 17rem;
+      margin-left: 0;
       max-width: 50rem;
+      flex: 1;
+    }
+
+    @include lgx {
+      margin-left: 0rem;
+    }
+
+    @include lxx {
+      margin-left: 4rem;
+      padding-left: 0;
     }
 
     & .paragraph-description {
@@ -57,71 +70,6 @@
 
       @include md {
         justify-content: flex-start;
-      }
-    }
-  }
-
-  .intro-image-container {
-    position: relative;
-    overflow: hidden;
-
-    padding: 2.5rem 1.3rem;
-
-    @include lg {
-      padding: 0 1.3rem;
-      margin-bottom: 0;
-
-      height: 100%;
-      width: 50%;
-      max-width: 58rem;
-
-      overflow: initial;
-    }
-
-    .intro-image-pseudo {
-      margin: 0 auto;
-      position: relative;
-
-      @include lg {
-        width: 100%;
-        height: 100%;
-      }
-    }
-
-    .intro-image {
-      // width: 100%;
-      // height: 100%;
-
-      @include lgx {
-        // height: 70%;
-        height: 47rem;
-        max-width: 65.5rem;
-
-        transform: translateX(5.5rem) translateY(-20px);
-      }
-    }
-
-    .intro-image-pseudo:before {
-      content: "";
-      width: 100%;
-      height: 80%;
-      transform: translateX(18%) translateY(29%);
-
-      display: block;
-      position: absolute;
-      background-color: #5266df;
-      z-index: -2;
-      border-top-left-radius: 500px;
-      border-bottom-left-radius: 500px;
-
-      @include lg {
-        height: 60%;
-        transform: translateX(25%) translateY(40%);
-      }
-
-      @include lgx {
-        height: 35rem;
-        transform: translateX(45%) translateY(35%);
       }
     }
   }

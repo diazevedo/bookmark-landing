@@ -27,6 +27,13 @@
     @content;
   }
 }
+
+@mixin lxx {
+  @media (min-width : #{$screen-xl-max}) {
+    @content;
+  }
+}
+
 @mixin shadow($color: rgba(0, 0, 0, 0.6)) {
   box-shadow: 0 4px 15px 0 $color;
 }
