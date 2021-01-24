@@ -1,11 +1,13 @@
 .intro-image-container {
   overflow: hidden;
-  padding: 0 0 7rem;
+  // padding: 0 0 7rem;
+  padding: 0 0 3rem;
   height: 100%;
   width: 100%;
 
   @include md {
     flex: 2;
+    padding-bottom: 7rem;
   }
 
   @include lg {
@@ -54,10 +56,11 @@
     border-bottom-left-radius: 500px;
 
     @include md {
-      height: 90%;
+      height: 80%;
     }
 
     @include lgx {
+      height: 90%;
       transform: translateX(25%) translateY(35%);
     }
   }

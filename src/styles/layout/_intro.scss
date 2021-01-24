@@ -3,7 +3,7 @@
 
   max-width: 120rem;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 4rem;
 
   @include md {
     margin-top: 10rem;
@@ -26,8 +26,7 @@
   }
 
   .product-description {
-    border: turquoise 1px solid;
-    padding: 2.5rem 3.5rem 4.5rem;
+    padding: 2.5rem 2.5rem 4.5rem;
 
     @include md {
       flex: 2;
@@ -50,19 +49,21 @@
     }
 
     & .paragraph-description {
-      margin-top: 4.5rem;
+      // margin-top: 2rem;
+      padding: 2rem;
 
-      @include lg {
-        margin-top: 2.5rem;
+      @include md {
+        padding: 2rem 0rem;
       }
     }
 
     & .row {
-      margin-top: 3.5rem;
+      margin-top: 1.5rem;
       @include row(center);
 
       & > a:last-child {
         margin-left: 1rem;
+
         @include md {
           margin-left: 1.5rem;
         }
