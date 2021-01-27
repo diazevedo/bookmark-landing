@@ -10,11 +10,22 @@
   }
 }
 
+.title-second {
+  color: $fourth-color;
+  font-size: 2.3rem;
+  font-weight: 500;
+
+  @include md {
+    font-size: 2.8rem;
+  }
+}
+
 .paragraph-description {
-  font-size: 10px;
   color: $third-color;
   font-size: 1.4rem;
   line-height: 2.1rem;
+
+  padding: 2rem;
 
   @include md {
     font-size: 1.6rem;

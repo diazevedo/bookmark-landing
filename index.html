@@ -83,63 +83,141 @@
             </div>
           </div>
           <div class="intro-image-container">
-            <div class="intro-image-pseudo">
+            <div class="intro-image-pseudo -right">
               <img
                 class="intro-image"
                 src="./src/assets/images/illustration-hero.svg"
                 alt="Introduction image"
-                width="100%"
               />
             </div>
           </div>
         </div>
       </section>
-      <section class="features"></section>
-      <h2>Features</h2>
-      <p>
-        Our aim is to make it quick and easy for you to access your favourite
-        websites. Your bookmarks sync between your devices so you can access
-        them on the go.
-      </p>
-      <div class="features-list">
-        <div>
-          <label for="feature-one">Simple Bookmarking</label>
-          <input type="radio" name="feature" id="feature-one" />
+      <section class="features">
+        <div class="features-wrapper">
+          <div class="text-wrapper">
+            <h2 class="title-second">Features</h2>
+            <p class="paragraph-description">
+              Our aim is to make it quick and easy for you to access your
+              favourite websites. Your bookmarks sync between your devices so
+              you can access them on the go.
+            </p>
+          </div>
+          <form class="features-options">
+            <div class="features-options-wrapper">
+              <input type="radio" name="feature" id="feature-one"
+              class="feature-control" value="feature-one" " />
+
+              <label for="feature-one" class="feature-label"
+                >Simple Bookmarking</label
+              >
+            </div>
+            <div class="features-options-wrapper">
+              <input
+                type="radio"
+                name="feature"
+                id="feature-two"
+                class="feature-control"
+                value="feature-two"
+              />
+
+              <label for="feature-two" class="feature-label"
+                >Speedy Searching</label
+              >
+            </div>
+            <div class="features-options-wrapper">
+              <input
+                type="radio"
+                name="feature"
+                id="feature-three"
+                class="feature-control"
+                value="feature-three"
+              />
+              <label for="feature-three" class="feature-label"
+                >Easy Sharing</label
+              >
+            </div>
+          </form>
         </div>
-        <div>
-          <label for="feature-one">Speedy Searching</label>
-          <input type="radio" name="feature" id="feature-two" />
+
+        <div class="features-description">
+          <section class="intro feature-one -active">
+            <div class="content-wrapper">
+              <div class="product-description">
+                <h3 class="title-second">Bookmark in one click</h3>
+                <p class="paragraph-description">
+                  Organize your bookmarks however you like. Our simple
+                  drag-and-drop interface gives you complete control over how
+                  you manage your favourite sites.
+                </p>
+                <div class="row">
+                  <a href="#" class="link-button action-link">More Info</a>
+                </div>
+              </div>
+              <div class="intro-image-container">
+                <div class="intro-image-pseudo -left first-image">
+                  <img
+                    class="intro-image"
+                    src="./src/assets/images/illustration-features-tab-1.svg"
+                    alt="Bookmark in one click"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="intro feature-two">
+            <div class="content-wrapper">
+              <div class="product-description">
+                <h3 class="title-second">More Info Intelligent search</h3>
+                <p class="paragraph-description">
+                  Our powerful search feature will help you find saved sites in
+                  no time at all. No need to trawl through all of your
+                  bookmarks. More Info Share your bookmarks.
+                </p>
+                <div class="row">
+                  <a href="#" class="link-button action-link">More Info</a>
+                </div>
+              </div>
+              <div class="intro-image-container">
+                <div class="intro-image-pseudo -left">
+                  <img
+                    class="intro-image"
+                    src="./src/assets/images/illustration-features-tab-2.svg"
+                    alt="Bookmark in one click"
+                    width="100%"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="intro feature-three">
+            <div class="content-wrapper">
+              <div class="product-description">
+                <h3 class="title-second">Share your bookmarks</h3>
+                <p class="paragraph-description">
+                  Easily share your bookmarks and collections with others.
+                  Create a shareable link that you can send at the click of a
+                  button.
+                </p>
+                <div class="row">
+                  <a href="#" class="link-button action-link">More Info</a>
+                </div>
+              </div>
+              <div class="intro-image-container">
+                <div class="intro-image-pseudo -left">
+                  <img
+                    class="intro-image"
+                    src="./src/assets/images/illustration-features-tab-3.svg"
+                    alt="Bookmark in one click"
+                    width="100%"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-        <div>
-          <label for="feature-one">Easy Sharing</label>
-          <input type="radio" name="feature" id="feature-three" />
-        </div>
-      </div>
-      <div>
-        <h3>Bookmark in one click</h3>
-        <p>
-          Organize your bookmarks however you like. Our simple drag-and-drop
-          interface gives you complete control over how you manage your
-          favourite sites.
-        </p>
-        <a href="#">More Info</a>
-      </div>
-      <div>
-        <h3>More Info Intelligent search</h3>
-        <p>
-          Our powerful search feature will help you find saved sites in no time
-          at all. No need to trawl through all of your bookmarks. More Info
-          Share your bookmarks.
-        </p>
-        <a href="#">More Info</a>
-      </div>
-      <div>
-        <h3>Easily share your bookmarks and collections with others</h3>
-        <p>
-          Create a shareable link that you can send at the click of a button.
-        </p>
-        <a href="#">More Info</a>
-      </div>
+      </section>
       <section class="download">
         <h2>Download the extension</h2>
         <p>
@@ -275,5 +353,6 @@
         <li><a href="" class="">Linkedin</a></li>
       </ul>
     </footer>
+    <script src="./src/js/app.js"></script>
   </body>
 </html>

@@ -1,0 +1,237 @@
+.features {
+  text-align: center;
+
+  .features-wrapper {
+    padding: 2.5rem;
+  }
+
+  .text-wrapper {
+    max-width: 52rem;
+    margin: 0 auto;
+  }
+
+  .features-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include md {
+      flex-direction: row;
+
+      max-width: 73rem;
+      margin: 0 auto;
+    }
+
+    .features-options-wrapper {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+
+      border: rgba(145, 148, 161, 0.4) 1px solid;
+      border-left: none;
+      border-right: none;
+
+      @include md {
+        border: rgba(145, 148, 161, 0.4) 1px solid;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+      }
+    }
+
+    .features-options-wrapper:nth-child(even) {
+      border: none;
+
+      @include md {
+        border: rgba(145, 148, 161, 0.4) 1px solid;
+
+        border-top: none;
+        border-left: none;
+        border-right: none;
+      }
+    }
+
+    .feature-label {
+      width: auto;
+      padding: 2rem;
+      font-size: 1.6rem;
+      display: block;
+      cursor: pointer;
+      position: relative;
+
+      @include md {
+        flex: 1;
+      }
+
+      color: #616169;
+    }
+
+    .feature-control {
+      position: absolute;
+      left: -9999px;
+
+      &:checked ~ .feature-label {
+        color: $fourth-color;
+
+        &:after {
+          content: "";
+          width: 70%;
+          display: block;
+          position: absolute;
+          height: 4px;
+          bottom: 0;
+          left: 50%;
+          background-color: $secondary-color;
+          transform: translateX(-50%);
+
+          @include md {
+            width: 100%;
+            left: 0;
+            right: 0;
+            transform: translateX(0%);
+          }
+        }
+      }
+    }
+  }
+
+  & .intro-image {
+    padding: 0 20px;
+
+    @include lgx {
+      padding: 0;
+    }
+  }
+
+  .features-description {
+    position: relative;
+    height: 60rem;
+
+    @include md {
+      margin-top: 4rem;
+    }
+  }
+
+  .intro {
+    position: absolute;
+    display: block;
+    transition: all 0.15s ease-in-out;
+    left: 0;
+    height: 100%;
+
+    @include md {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .intro-image-pseudo {
+      margin: 0 auto;
+    }
+
+    .intro-image-pseudo:before {
+      @include md {
+        height: 95%;
+        transform: translateX(-15%) translateY(25%);
+      }
+    }
+
+    .intro-image-container {
+      @include lgx {
+        flex: 1;
+      }
+    }
+
+    &:first-child {
+      .intro-image-container {
+        @include lg {
+          transform: translateX(2.5rem) translateY(-5.5rem);
+        }
+
+        .intro-image-pseudo:before {
+          transform: translateX(-25%) translateY(25%);
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      .intro-image-container {
+        @include lg {
+          transform: translateX(10rem) translateY(-5.5rem);
+        }
+
+        .intro-image-pseudo {
+          max-width: 52rem;
+          max-height: 41.5rem;
+
+          &:before {
+            transform: translateX(-35%) translateY(25%);
+          }
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      .intro-image-container {
+        @include lg {
+          transform: translateX(9.5rem) translateY(-5.5rem);
+        }
+
+        .intro-image-pseudo {
+          max-width: 43rem;
+          max-height: 34.5rem;
+
+          &:before {
+            transform: translateX(-20%) translateY(25%);
+          }
+        }
+      }
+    }
+
+    img {
+      height: 100%;
+    }
+
+    @include md {
+      margin-top: 5rem;
+
+      .first-image {
+        max-width: 57.5rem;
+        max-height: 34.5rem;
+      }
+    }
+
+    & .paragraph-description {
+      font-size: 1.6rem;
+
+      @include lg {
+        max-width: 40rem;
+      }
+    }
+
+    .content-wrapper .product-description .row > a:last-child {
+      margin-left: 0;
+    }
+
+    &:nth-child(even):not(.-active) {
+      left: -9999px;
+    }
+
+    &:nth-child(odd):not(.-active) {
+      left: 9999px;
+    }
+  }
+
+  & .product-description {
+    order: 0;
+
+    @include md {
+      order: 1;
+    }
+  }
+}
+
+.download {
+  margin-top: 15rem;
+}
