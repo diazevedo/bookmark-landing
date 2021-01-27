@@ -111,8 +111,11 @@
       overflow: initial;
       padding: 0 0 7rem;
 
+      height: 42rem;
+
       @include md {
         margin-right: 1.5rem;
+        height: initial;
       }
 
       @include lg {
@@ -162,8 +165,6 @@
             margin-left: 15rem;
           }
 
-          height: 28.5rem;
-
           @include lgx {
             width: 54rem;
             height: 34.5rem;
@@ -173,8 +174,8 @@
         .intro-image-pseudo:before {
           height: 90%;
 
-          @include md {
-            height: 90%;
+          @include lg {
+            height: 100%;
           }
         }
       }
@@ -183,12 +184,13 @@
     /** Image 2 */
     &:nth-child(2) {
       .intro-image-container {
-        @include lg {
-        }
-
         .intro-image-pseudo {
           max-width: 52rem;
           max-height: 41.5rem;
+
+          &:before {
+            height: 90%;
+          }
         }
       }
     }
@@ -196,15 +198,16 @@
     /** Image 3 */
     &:nth-child(3) {
       .intro-image-container {
-        @include lg {
-        }
-
         .intro-image-pseudo {
           max-width: 49rem;
           max-height: 38rem;
 
           &:before {
             height: 90%;
+
+            @include lg {
+              height: 92%;
+            }
           }
         }
       }

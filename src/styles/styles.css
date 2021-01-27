@@ -1348,11 +1348,13 @@ a {
 .features .intro .intro-image-container {
   overflow: initial;
   padding: 0 0 7rem;
+  height: 42rem;
 }
 
 @media (min-width: 768px) {
   .features .intro .intro-image-container {
     margin-right: 1.5rem;
+    height: initial;
   }
 }
 
@@ -1411,10 +1413,6 @@ a {
   }
 }
 
-.features .intro:first-child .intro-image-container .intro-image-pseudo {
-  height: 28.5rem;
-}
-
 @media (min-width: 992px) {
   .features .intro:first-child .intro-image-container .intro-image-pseudo {
     margin-left: 15rem;
@@ -1432,15 +1430,19 @@ a {
   height: 90%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .features .intro:first-child .intro-image-container .intro-image-pseudo:before {
-    height: 90%;
+    height: 100%;
   }
 }
 
 .features .intro:nth-child(2) .intro-image-container .intro-image-pseudo {
   max-width: 52rem;
   max-height: 41.5rem;
+}
+
+.features .intro:nth-child(2) .intro-image-container .intro-image-pseudo:before {
+  height: 90%;
 }
 
 .features .intro:nth-child(3) .intro-image-container .intro-image-pseudo {
@@ -1450,6 +1452,12 @@ a {
 
 .features .intro:nth-child(3) .intro-image-container .intro-image-pseudo:before {
   height: 90%;
+}
+
+@media (min-width: 992px) {
+  .features .intro:nth-child(3) .intro-image-container .intro-image-pseudo:before {
+    height: 92%;
+  }
 }
 
 .features .intro .paragraph-description {
