@@ -1,9 +1,14 @@
 .features {
   text-align: center;
+  margin-top: 11rem;
 
   .text-wrapper {
     max-width: 53rem;
-    margin: 0 auto;
+    margin: 1rem auto 2.5rem;
+
+    .paragraph-description {
+      padding: 1.5rem 3rem;
+    }
   }
 
   .features-options {
@@ -11,6 +16,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 2rem;
 
     @include md {
       flex-direction: row;
@@ -70,7 +76,10 @@
 
       &:checked ~ .feature-label {
         color: $fourth-color;
-        font-weight: 500;
+
+        @include md {
+          font-weight: 500;
+        }
 
         &:after {
           content: "";
@@ -98,10 +107,13 @@
   .features-description {
     position: relative;
     min-height: 60rem;
+    margin-top: 2rem;
   }
 
   .intro {
     position: absolute;
+
+    transition: all 0.5s ease-in-out;
 
     @include md {
       margin-top: 6rem;
@@ -111,7 +123,7 @@
       overflow: initial;
       padding: 0 0 7rem;
 
-      height: 42rem;
+      // height: 42rem;
 
       @include md {
         margin-right: 1.5rem;
@@ -174,7 +186,10 @@
         .intro-image-pseudo:before {
           height: 90%;
 
+          transform: translateX(-60%) translateY(20%);
+
           @include lg {
+            transform: translateX(-60%) translateY(25%);
             height: 100%;
           }
         }
@@ -214,12 +229,11 @@
     }
 
     & .paragraph-description {
-      font-size: 1.6rem;
-
       @include lg {
         max-width: 40rem;
       }
     }
+
     .content-wrapper {
       @include lg {
         justify-content: center;
@@ -230,19 +244,16 @@
       }
     }
 
-    & .-active {
+    &.-active {
       left: 0px;
-      border: red 1px solid;
     }
 
     &:nth-child(even):not(.-active) {
       left: -9999px;
-      border: blue 1px solid;
     }
 
     &:nth-child(odd):not(.-active) {
       left: 9999px;
-      border: green 1px solid;
     }
   }
 
@@ -263,6 +274,10 @@
 
     @include lgx {
       padding: 7rem 1rem;
+    }
+
+    .paragraph-description {
+      padding: 1.5rem 1rem;
     }
   }
 }
