@@ -1,9 +1,35 @@
 .download {
   width: 100%;
-
   text-align: center;
 
   .paragraph-description {
+    max-width: 55rem;
+    margin: 0 auto;
     padding: 2rem 3rem;
+
+    @include md {
+      padding: 2rem 0;
+    }
+  }
+
+  ul {
+    margin-top: 3.5rem;
+
+    @include md {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      & li:nth-child(2) {
+        margin-left: 3rem;
+        margin-top: 4rem;
+      }
+
+      & li:nth-child(3) {
+        margin-left: 3rem;
+        margin-top: 8rem;
+      }
+    }
   }
 }
