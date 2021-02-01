@@ -15,5 +15,8 @@
 @import "./layout/_intro";
 @import "./layout/_features";
 @import "./layout/_download";
+@import "./layout/_faqs";
+
+/** Fix component card as it should be imported  before layout files. */
 
 @import "./components/card";

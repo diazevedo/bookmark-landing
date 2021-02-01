@@ -1,0 +1,132 @@
+.faqs {
+  max-width: 55rem;
+  text-align: center;
+  margin: 0 auto;
+
+  .title-second {
+    padding: 1rem 5rem;
+    line-height: 3rem;
+  }
+
+  ul {
+    padding: 0 3rem;
+
+    @include md {
+      padding: 0;
+    }
+
+    li {
+      border-bottom: rgba(0, 0, 0, 0.1) solid 0.5px;
+
+      @include md {
+        &:first-child {
+          border-top: rgba(0, 0, 0, 0.1) solid 0.5px;
+        }
+      }
+    }
+  }
+
+  details {
+    height: auto;
+
+    &[open] > {
+      summary {
+        &:after,
+        &:before {
+          border-color: #fa5757;
+        }
+
+        &:after {
+          transform: translateY(-70%) rotate(45deg);
+        }
+
+        &:before {
+          transform: translateY(-70%) rotate(-45deg);
+        }
+      }
+    }
+
+    .paragraph-description {
+      text-align: left;
+
+      padding: 1rem 0 3rem;
+      color: #51505b;
+
+      @include md {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  summary {
+    font-size: 1.5rem;
+    list-style-type: none;
+    height: 100%;
+    // color: $fourth-color;
+    color: #242531;
+
+    position: relative;
+    text-align: left;
+
+    transition: all 0.2s ease-in-out;
+
+    padding: 2.5rem 0;
+
+    @media (hover: hover) {
+      &:hover {
+        cursor: pointer;
+        color: #fa5757;
+      }
+    }
+
+    @include md {
+      font-size: 1.8rem;
+    }
+
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      width: 11px;
+      height: 13px;
+      right: 0;
+      border: 3px solid $primary-color;
+
+      transition: all 0.2s ease-in;
+      position: absolute;
+
+      border-top: none;
+      border-bottom: none;
+
+      top: 50%;
+      right: 2px;
+
+      @include md {
+        right: 2rem;
+      }
+    }
+
+    &:after {
+      border-right: none;
+      transform: translateY(-70%) rotate(-45deg);
+    }
+
+    &:before {
+      border-left: none;
+      border-top: none;
+      border-bottom: none;
+
+      transform: translateY(-70%) rotate(45deg);
+    }
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .action-link {
+    width: fit-content;
+    padding: 1.4rem 2.4rem;
+    margin: 5rem auto 0;
+  }
+}
