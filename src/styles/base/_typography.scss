@@ -16,7 +16,17 @@
   font-weight: 500;
 
   @include md {
-    font-size: 2.8rem;
+    font-size: 3rem;
+  }
+}
+
+.title-third {
+  color: $fourth-color;
+  font-size: 2rem;
+  font-weight: 500;
+
+  @include md {
+    font-size: 2.4rem;
   }
 }
 

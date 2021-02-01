@@ -1,0 +1,62 @@
+.card {
+  width: 28.5rem;
+  height: 36rem;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  border-radius: 10px;
+  box-shadow: 0 5px 15px 5px rgba(43, 22, 22, 0.1);
+  margin-bottom: 4rem;
+
+  header img {
+    margin-bottom: 3rem;
+  }
+
+  .paragraph-description {
+    font-size: 1.4rem;
+    padding: 1rem;
+    margin-bottom: 8.5rem;
+  }
+
+  footer {
+    width: 100%;
+    padding: 2.5rem;
+    position: absolute;
+
+    height: 10rem;
+    background-origin: padding-box;
+    bottom: 0;
+    padding: 2.5rem;
+    overflow: hidden;
+
+    &:before {
+      width: 190%;
+      height: 4px;
+
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: radial-gradient(
+        5px 3px at center,
+        #dfdde8 3px,
+        transparent 1px
+      );
+      background-size: 15px;
+      background-position: left;
+      background-repeat: repeat-x;
+      top: 0;
+      left: -7.5px;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+}

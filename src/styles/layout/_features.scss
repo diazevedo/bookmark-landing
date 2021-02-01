@@ -21,7 +21,7 @@
     @include md {
       flex-direction: row;
 
-      max-width: 73rem;
+      max-width: 76.5rem;
       margin: 0 auto;
     }
 
@@ -57,7 +57,7 @@
 
     .feature-label {
       width: auto;
-      padding: 2rem;
+      padding: 3rem 2rem;
       font-size: 1.6rem;
       display: block;
       cursor: pointer;
@@ -112,7 +112,6 @@
 
   .intro {
     position: absolute;
-
     transition: all 0.5s ease-in-out;
 
     @include md {
@@ -135,7 +134,8 @@
       }
 
       @include lgx {
-        flex: 2;
+        margin-right: 0;
+        // flex: 2;
       }
     }
     /** Images basics */
@@ -147,7 +147,8 @@
       }
 
       @include lxx {
-        margin-left: 23rem;
+        // margin-left: 23rem;
+        margin: 0;
       }
 
       &:before {
@@ -161,24 +162,31 @@
 
         @include md {
           margin-left: 2rem;
+          width: 100%;
+        }
+
+        @include lxx {
+          margin-left: 0;
         }
       }
     }
 
     /** Image 1 */
     &:first-child {
+      max-width: 110.5rem;
+
       .intro-image-container {
         @include lg {
           transform: translateX(0%);
         }
 
         .intro-image-pseudo {
-          @include lg {
-            margin-left: 15rem;
-          }
+          // @include lg {
+          //   margin-left: 15rem;
+          // }
 
           @include lgx {
-            width: 54rem;
+            width: 53.4rem;
             height: 34.5rem;
           }
         }
@@ -198,9 +206,26 @@
 
     /** Image 2 */
     &:nth-child(2) {
+      max-width: 118rem;
+
+      .product-description {
+        @include lxx {
+          margin-left: 0;
+          padding-left: 2rem;
+
+          .paragraph-description {
+            padding-right: 1rem;
+          }
+        }
+      }
+
       .intro-image-container {
+        @include lxx {
+          padding-left: 11rem;
+        }
+
         .intro-image-pseudo {
-          max-width: 52rem;
+          max-width: 48rem;
           max-height: 41.5rem;
 
           &:before {
@@ -228,12 +253,6 @@
       }
     }
 
-    & .paragraph-description {
-      @include lg {
-        max-width: 40rem;
-      }
-    }
-
     .content-wrapper {
       @include lg {
         justify-content: center;
@@ -245,7 +264,8 @@
     }
 
     &.-active {
-      left: 0px;
+      left: 50%;
+      transform: translateX(-50%);
     }
 
     &:nth-child(even):not(.-active) {
@@ -273,11 +293,16 @@
     }
 
     @include lgx {
-      padding: 7rem 1rem;
+      margin-left: 13rem;
+      padding: 7rem 0rem;
     }
 
     .paragraph-description {
       padding: 1.5rem 1rem;
+
+      @include md {
+        padding: 2rem 0;
+      }
     }
   }
 }
