@@ -350,9 +350,9 @@ input[type="radio"] {
   /* 1 */
   padding: 0;
   /* 2 */
-  *height: 13px;
+  height: 13px;
   /* 3 */
-  *width: 13px;
+  width: 13px;
   /* 3 */
 }
 
@@ -471,13 +471,13 @@ body {
   font-family: "Rubik", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body,
 body * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 a {
