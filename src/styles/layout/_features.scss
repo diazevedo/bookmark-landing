@@ -151,11 +151,9 @@
       margin: 0 auto;
 
       @include lgx {
-        margin-left: 17rem;
       }
 
       @include lxx {
-        // margin-left: 23rem;
         margin: 0;
       }
 
@@ -189,13 +187,14 @@
         }
 
         .intro-image-pseudo {
-          // @include lg {
-          //   margin-left: 15rem;
-          // }
+          @include md {
+            max-width: 45rem;
+            max-height: 34.5rem;
+          }
 
-          @include lgx {
-            width: 53.4rem;
-            height: 34.5rem;
+          @include lxx {
+            max-width: 53.4rem;
+            max-height: 34.5rem;
           }
         }
 
@@ -204,9 +203,12 @@
 
           transform: translateX(-60%) translateY(20%);
 
+          @include md {
+            height: 100%;
+          }
+
           @include lg {
             transform: translateX(-60%) translateY(25%);
-            height: 100%;
           }
         }
       }
@@ -293,7 +295,7 @@
       order: 1;
       margin-top: 0;
 
-      padding: 2rem 1rem;
+      padding: 2rem 5rem;
     }
 
     @include lg {

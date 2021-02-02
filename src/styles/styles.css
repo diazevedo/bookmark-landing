@@ -713,6 +713,8 @@ a {
   color: #fff;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   font-weight: 500;
 }
 
@@ -737,6 +739,8 @@ a {
     color: #fff;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   }
   .login-button:hover {
     background-color: #fff;
@@ -759,6 +763,8 @@ a {
   color: #fff;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   font-size: 1.4rem;
   font-weight: 500;
   padding: 1.5rem 1.9rem;
@@ -790,6 +796,8 @@ a {
   color: #626169;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
   font-size: 1.4rem;
   font-weight: 500;
   padding: 1.5rem 1.9rem;
@@ -1416,12 +1424,6 @@ a {
   margin: 0 auto;
 }
 
-@media (min-width: 1200px) {
-  .features .intro .intro-image-pseudo {
-    margin-left: 17rem;
-  }
-}
-
 @media (min-width: 1440px) {
   .features .intro .intro-image-pseudo {
     margin: 0;
@@ -1463,10 +1465,17 @@ a {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .features .intro:first-child .intro-image-container .intro-image-pseudo {
-    width: 53.4rem;
-    height: 34.5rem;
+    max-width: 45rem;
+    max-height: 34.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .features .intro:first-child .intro-image-container .intro-image-pseudo {
+    max-width: 53.4rem;
+    max-height: 34.5rem;
   }
 }
 
@@ -1476,11 +1485,16 @@ a {
           transform: translateX(-60%) translateY(20%);
 }
 
+@media (min-width: 768px) {
+  .features .intro:first-child .intro-image-container .intro-image-pseudo:before {
+    height: 100%;
+  }
+}
+
 @media (min-width: 992px) {
   .features .intro:first-child .intro-image-container .intro-image-pseudo:before {
     -webkit-transform: translateX(-60%) translateY(25%);
             transform: translateX(-60%) translateY(25%);
-    height: 100%;
   }
 }
 
@@ -1567,7 +1581,7 @@ a {
         -ms-flex-order: 1;
             order: 1;
     margin-top: 0;
-    padding: 2rem 1rem;
+    padding: 2rem 5rem;
   }
 }
 
