@@ -8,6 +8,10 @@
   @include md {
     margin-top: 10rem;
   }
+
+  @include lgx {
+    margin-top: 14rem;
+  }
 }
 
 .content-wrapper {

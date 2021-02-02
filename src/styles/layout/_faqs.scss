@@ -3,6 +3,10 @@
   text-align: center;
   margin: 0 auto;
 
+  @include lg {
+    margin-top: 11rem;
+  }
+
   .title-second {
     padding: 1rem 5rem;
     line-height: 3rem;
@@ -13,6 +17,10 @@
 
     @include md {
       padding: 0;
+    }
+
+    @include lg {
+      margin-top: 3.5rem;
     }
 
     li {

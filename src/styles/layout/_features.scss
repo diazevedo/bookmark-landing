@@ -2,12 +2,20 @@
   text-align: center;
   margin-top: 11rem;
 
+  @include lg {
+    margin-top: 5.5rem;
+  }
+
   .text-wrapper {
     max-width: 53rem;
     margin: 1rem auto 2.5rem;
 
     .paragraph-description {
       padding: 1.5rem 3rem;
+
+      @include lg {
+        padding: 2rem 3rem;
+      }
     }
   }
 
