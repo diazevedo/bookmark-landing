@@ -583,7 +583,7 @@ a {
     border-top: none;
     background-color: transparent;
     color: #252b46;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -1651,9 +1651,9 @@ a {
 }
 
 .faqs {
-  max-width: 55rem;
+  max-width: 60rem;
   text-align: center;
-  margin: 0 auto;
+  margin: 13rem auto 0;
 }
 
 @media (min-width: 992px) {
@@ -1667,8 +1667,22 @@ a {
   line-height: 3rem;
 }
 
+.faqs > .paragraph-description {
+  padding-top: 1rem;
+}
+
+@media (min-width: 768px) {
+  .faqs > .paragraph-description {
+    font-size: 2rem;
+    padding-top: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 .faqs ul {
   padding: 0 3rem;
+  margin-top: 2.5rem;
 }
 
 @media (min-width: 768px) {
@@ -1679,7 +1693,7 @@ a {
 
 @media (min-width: 992px) {
   .faqs ul {
-    margin-top: 3.5rem;
+    margin-top: 4rem;
   }
 }
 

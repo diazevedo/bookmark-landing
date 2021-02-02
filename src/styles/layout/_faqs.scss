@@ -1,7 +1,7 @@
 .faqs {
-  max-width: 55rem;
+  max-width: 60rem;
   text-align: center;
-  margin: 0 auto;
+  margin: 13rem auto 0;
 
   @include lg {
     margin-top: 11rem;
@@ -12,15 +12,28 @@
     line-height: 3rem;
   }
 
+  & > .paragraph-description {
+    padding-top: 1rem;
+
+    @include md {
+      font-size: 2rem;
+      padding-top: 2rem;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
   ul {
     padding: 0 3rem;
+
+    margin-top: 2.5rem;
 
     @include md {
       padding: 0;
     }
 
     @include lg {
-      margin-top: 3.5rem;
+      margin-top: 4rem;
     }
 
     li {
