@@ -20,4 +20,21 @@ document.addEventListener("DOMContentLoaded", () => {
   $radios.forEach((element) => {
     element.addEventListener("click", checkRadio);
   });
+
+  const $form = document.getElementById("contact-form");
+  const $emailInput = document.getElementById("email");
+  const $divWrapper = document.getElementById("input-email-wrapper");
+
+  $form.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    const isValidEmail = $emailInput.value.match(mailformat);
+
+    if (!isValidEmail) {
+      $divWrapper.classList.add("-show-error");
+    } else {
+      $divWrapper.classList.remove("-show-error");
+    }
+  });
 });

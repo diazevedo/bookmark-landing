@@ -1802,6 +1802,102 @@ a {
   margin: 5rem auto 0;
 }
 
+.contact {
+  width: 100%;
+  background: #5368df;
+  padding: 7.5rem 3.2rem 5.5rem;
+  text-align: center;
+}
+
+.contact .people {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+.contact .title-fourth {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 1rem;
+  line-height: 3rem;
+}
+
+.contact form {
+  margin-top: 3rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact form .input-email-wrapper {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.contact form .input-email-wrapper input {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  padding: 1.5rem 1.5rem;
+  border-radius: 4px;
+  display: block;
+  color: #252b46;
+  width: 100%;
+}
+
+.contact form .input-email-wrapper input::-webkit-input-placeholder {
+  color: gray;
+}
+
+.contact form .input-email-wrapper input:-ms-input-placeholder {
+  color: gray;
+}
+
+.contact form .input-email-wrapper input::-ms-input-placeholder {
+  color: gray;
+}
+
+.contact form .input-email-wrapper input::placeholder {
+  color: gray;
+}
+
+.contact form .input-email-wrapper .error {
+  display: none;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: left;
+  color: #fff;
+  font-style: italic;
+}
+
+.contact form .input-email-wrapper.-show-error {
+  background-color: #fa5757;
+  padding: 2px;
+}
+
+.contact form .input-email-wrapper.-show-error .error {
+  display: block;
+}
+
+.contact form button {
+  margin-top: 1rem;
+  background-color: #fa5757;
+}
+
+.contact form button:hover {
+  background-color: #fff;
+  color: #fa5757;
+  border-color: #fa5757;
+}
+
 /** Fix component card as it should be imported  before layout files. */
 .card {
   width: 28.5rem;
