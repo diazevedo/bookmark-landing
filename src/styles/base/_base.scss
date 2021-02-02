@@ -9,8 +9,6 @@ body {
   font-family: "Rubik", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: $screen-xl-max;
-  margin: 0 auto;
 
   overflow-x: hidden;
 }
@@ -23,9 +21,4 @@ body * {
 a {
   color: inherit;
   cursor: pointer;
-}
-
-.container {
-  max-width: 144rem;
-  margin: 0 auto;
 }

@@ -1,11 +1,40 @@
 .footer {
+  background-color: $fourth-color;
+}
+
+.footer-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  background-color: $fourth-color;
+  max-width: 111rem;
+  margin: 0 auto;
+
   padding: 4rem;
+
+  @include md {
+    flex-direction: row;
+    // padding: 4rem 0 8rem;
+    padding: 3rem 8rem 3rem 4rem;
+  }
+
+  @include lgx {
+    padding: 3rem 0rem 3rem 0rem;
+  }
+
+  .menu-footer-wrapper {
+    img {
+      height: 2.5rem;
+    }
+
+    @include md {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+    }
+  }
 
   .footer-list {
     display: flex;
@@ -13,8 +42,19 @@
     align-items: center;
     margin: 3.2rem 0 2rem;
 
+    @include md {
+      flex-direction: row;
+      margin: 0;
+      margin-left: 1.5rem;
+    }
+
     li {
       margin-bottom: 3rem;
+
+      @include md {
+        margin: 0;
+        margin-left: 5rem;
+      }
     }
   }
 
@@ -28,7 +68,13 @@
     }
   }
 
-  .social-list li {
-    margin-left: 2.5rem;
+  .social-list {
+    @include md {
+      display: flex;
+    }
+
+    li {
+      margin-left: 2.5rem;
+    }
   }
 }
