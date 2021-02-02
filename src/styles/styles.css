@@ -1944,6 +1944,56 @@ a {
   }
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #252b46;
+  padding: 4rem;
+}
+
+.footer .footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3.2rem 0 2rem;
+}
+
+.footer .footer-list li {
+  margin-bottom: 3rem;
+}
+
+.footer .link {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.footer .link:hover {
+  color: #fa5757;
+}
+
+.footer .social-list li {
+  margin-left: 2.5rem;
+}
+
 /** Fix component card as it should be imported  before layout files. */
 .card {
   width: 28.5rem;

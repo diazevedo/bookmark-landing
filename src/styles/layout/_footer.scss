@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: $fourth-color;
+  padding: 4rem;
+
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3.2rem 0 2rem;
+
+    li {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+
+    &:hover {
+      color: #fa5757;
+    }
+  }
+
+  .social-list li {
+    margin-left: 2.5rem;
+  }
+}
