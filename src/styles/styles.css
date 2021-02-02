@@ -1807,6 +1807,18 @@ a {
   background: #5368df;
   padding: 7.5rem 3.2rem 5.5rem;
   text-align: center;
+  margin-top: 12rem;
+}
+
+@media (min-width: 768px) {
+  .contact {
+    padding-bottom: 7rem;
+  }
+}
+
+.contact .wrapper {
+  max-width: 44rem;
+  margin: 0 auto;
 }
 
 .contact .people {
@@ -1825,6 +1837,14 @@ a {
   line-height: 3rem;
 }
 
+@media (min-width: 768px) {
+  .contact .title-fourth {
+    font-size: 3.2rem;
+    margin-top: 3.5rem;
+    line-height: 4rem;
+  }
+}
+
 .contact form {
   margin-top: 3rem;
   width: 100%;
@@ -1837,9 +1857,24 @@ a {
           flex-direction: column;
 }
 
+@media (min-width: 768px) {
+  .contact form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .contact form .input-email-wrapper {
   width: 100%;
   border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .contact form .input-email-wrapper {
+    max-width: 30rem;
+  }
 }
 
 .contact form .input-email-wrapper input {
@@ -1890,12 +1925,23 @@ a {
 .contact form button {
   margin-top: 1rem;
   background-color: #fa5757;
+  border: 2px transparent solid;
 }
 
 .contact form button:hover {
   background-color: #fff;
   color: #fa5757;
   border-color: #fa5757;
+}
+
+@media (min-width: 768px) {
+  .contact form button {
+    margin-left: 2rem;
+    margin-top: 0;
+    height: 5rem;
+    width: 12.5rem;
+    padding: 0;
+  }
 }
 
 /** Fix component card as it should be imported  before layout files. */
